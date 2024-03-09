@@ -7,11 +7,33 @@ h2, h3 {
     font-family: var(--header-font);
 }
 
-p {
+p, button {
     font-family: var(--body-font);
 }
 
 section {
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+}
+
+aside, #about-me-head, #profile-img {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#hero, #about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
