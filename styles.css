@@ -1,0 +1,17 @@
+:root {
+    --header-font: Arial, sans-serif;
+    --body-font: Arial, sans-serif;
+}
+
+h2, h3 {
+    font-family: var(--header-font);
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
