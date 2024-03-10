@@ -13,10 +13,13 @@ body {
 
 h1 {
     font-size: var(--header-font-size);
+
 }
 
 h2 {
     font-size: var(--subheader-font-size);
+    margin: 0;
+    padding: 0;
 }
 
 p, button, .contact-form {
@@ -33,15 +36,14 @@ nav {
 }
 
 section {
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 0;
+    margin: 0;
     align-items: center;
-    justify-content: center;
-    
 }
 
-.about-me-content {
+div, article, .about-me-content {
     border: 1px solid red;
 }
 
