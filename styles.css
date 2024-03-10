@@ -2,6 +2,7 @@
     --header-font: "Barlow Condensed", Arial, sans-serif;
     --header-font-size: 100px;
     --subheader-font-size: 60px;
+    --subheader3-font-size: 40px;
     --body-font: "Montserrat", Arial, sans-serif;
     box-sizing: border-box;
 }
@@ -22,6 +23,16 @@ h2 {
     padding: 0;
 }
 
+h3 {
+    font-size: var(--subheader3-font-size);
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 p, button, .contact-form {
     font-family: var(--body-font);
 }
@@ -38,13 +49,10 @@ nav {
 section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    padding: 0;
+    padding: 0 5vw 0 5vw;
     margin: 0;
     align-items: center;
-}
 
-div, article, .about-me-content {
-    border: 1px solid red;
 }
 
 
