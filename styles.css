@@ -3,6 +3,7 @@
     --header-font-size: 100px;
     --subheader-font-size: 60px;
     --body-font: "Montserrat", Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -34,13 +35,15 @@ nav {
 section {
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     align-items: center;
     justify-content: center;
-    grid-auto-rows: minmax(100px, auto);
+    
 }
 
+.about-me-content {
+    border: 1px solid red;
+}
 
 
 
