@@ -1,14 +1,23 @@
 :root {
-    --header-font: Arial, sans-serif;
-    --body-font: Arial, sans-serif;
+    --header-font: "Barlow Condensed", Arial, sans-serif;
+    --body-font: "Montserrat", Arial, sans-serif;
 }
 
-h2, h3 {
+body {
     font-family: var(--header-font);
 }
 
-p, button {
+h1 {
+    font-size: 100px;
+}
+
+p, button, .contact-form {
     font-family: var(--body-font);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
 }
 
 section {
@@ -31,9 +40,16 @@ aside, #about-me-head, #profile-img {
     grid-auto-rows: minmax(100px, auto);
 }
 
-#hero, #about {
+#hero, #about, .contact-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+}
+
+legend {
+    text-align: center;
+}
+
+label {
+    text-align: end;
 }
