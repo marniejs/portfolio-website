@@ -44,7 +44,12 @@ nav {
     justify-content: space-around;
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
+}
+
+a:visited {
+    color: #7F9F80;
 }
 
 section {
@@ -74,5 +79,10 @@ button, input[type="submit"] {
     display: inline-block;
     font-size: 16px;
     margin: 0 0 10px 0;
+    transition-duration: 0.4s;
 }
 
+button:hover, input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+}
