@@ -3,6 +3,9 @@
     --header-font-size: 100px;
     --subheader-font-size: 60px;
     --subheader3-font-size: 40px;
+    --contrast-color: #7F9F80;
+    --light-color: #fff;
+    --dark-color: #000;
     --body-font: "Montserrat", Arial, sans-serif;
     box-sizing: border-box;
 }
@@ -44,12 +47,12 @@ nav {
     justify-content: space-around;
     position: fixed;
     width: 100%;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 a:visited {
-    color: #7F9F80;
+    color: var(--contrast-color);
 }
 
 section {
@@ -70,9 +73,9 @@ input, textarea {
 }
 
 button, input[type="submit"] {
-    background-color: #000; 
+    background-color: var(--dark-color);
     border: none;
-    color: white;
+    color: var(--light-color);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -83,6 +86,6 @@ button, input[type="submit"] {
 }
 
 button:hover, input[type="submit"]:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--contrast-color);
+    color: var(--dark-color);
 }
