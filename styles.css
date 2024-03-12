@@ -58,10 +58,9 @@ a:visited {
 section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    padding: 0 5vw 0 5vw;
-    margin: 0;
+    padding: 0 12px 0 12px;
+    margin: 0 12px 16px 0;
     align-items: center;
-
 }
 
 form {
@@ -88,4 +87,16 @@ button, input[type="submit"] {
 button:hover, input[type="submit"]:hover {
     background-color: var(--contrast-color);
     color: var(--dark-color);
+}
+
+#about-me-head {
+    background-color: var(--contrast-color);
+    color: var(--light-color);
+    height: 100%;
+    padding: 12px;
+}
+
+#about-me-body {
+    height: 100%;
+    padding: 12px;
 }
