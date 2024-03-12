@@ -59,7 +59,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     padding: 0 12px 0 12px;
-    margin: 0 12px 16px 0;
+    margin: 0 16px 16px 0;
     align-items: center;
 }
 
@@ -89,7 +89,7 @@ button:hover, input[type="submit"]:hover {
     color: var(--dark-color);
 }
 
-#about-me-head {
+#about-me-head, #contact {
     background-color: var(--contrast-color);
     color: var(--light-color);
     height: 100%;
@@ -97,6 +97,6 @@ button:hover, input[type="submit"]:hover {
 }
 
 #about-me-body {
-    height: 100%;
+    margin: 16px;
     padding: 12px;
 }
